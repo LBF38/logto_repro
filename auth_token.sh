@@ -15,4 +15,4 @@ response=$(curl --location \
     --request GET 'http://localhost:3001/api/users' \
     --header "Authorization: Bearer ${access_token}" \
     --verbose)
-echo "$response"
+echo "$response" | jq
